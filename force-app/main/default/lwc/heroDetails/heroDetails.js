@@ -11,7 +11,7 @@ export default class HeroDetails extends LightningElement {
 
     recordInfoData;
     hrefUrl;
-
+    //comment added by neil
     @wire(getRecordInfo, { productOrFamilyName: '$recordName' })
     recordInfo({ error, data }) {
         this.recordInfoData = { error, data };
